@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.nav-bar{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    font-size: 30px;
+    font-weight: 600;
+    color: blueviolet;
+}
+#ziko{
+    color: rgb(255, 16, 16);
+}
+
+.nav-menu {
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    padding: 5px 35px;
+}
+.nav-menu li a{
+    font: bold;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 25px;
+    color: indigo;
+}
+
+.nav-menu li a:hover{
+    color: #fff000;
+    transition: all 0.3s;
+    border-bottom: solid 3px #fff000;
+}
+.m-icon{
+    display: flex ;
+    display: none;
+    align-items: center;
+}
+.m-icon a{
+    text-decoration: none;
+    color: navy;
+    font-size: 50px;
+}
+@media screen and (max-width:790px){
+    .nav-menu{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 5rem;
+        text-align: center;
+        background-color: rgb(221, 166, 146);
+    }
+    .menu-icon {
+        top: 50px;
+        right: 50px;
+        position: absolute;
+        display: block;
+    }
+}
