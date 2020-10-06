@@ -3,11 +3,17 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto' , sans-serif;
+    background-color: #d8d5d5;
 }
 
 .nav-bar{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 2%;
+    background-color: #d8d5d5;
+    border: solid 10px #ffffff;
+    border-radius: 20px;
+    position: relative;
 }
 .nav-container{
     display: flex;
@@ -21,25 +27,39 @@ body{
 .logo span{
     font-size: 30px;
     font-weight: 600;
-    color: blueviolet;
+    color: rgb(36, 7, 7);
+    word-spacing: 150px;
+    font-family: 'Sansita Swashed', cursive;
 }
 #ziko{
-    color: rgb(255, 16, 16);
+    color: rgb(148, 9, 9);
 }
-
+#projects{
+    letter-spacing: 25px;
+}
 .nav-menu {
     display: flex;
 }
 .nav-menu li{
     list-style: none;
-    padding: 5px 35px;
+    border-left: solid 3px #fff;
+    border-right: solid 3px #fff;
+    border-radius: 30px;
+    padding: 15px 60px;
+}
+.nav-menu li:hover{
+    border-left: solid 1px #fff000;
+    border-right: solid 1px #fff000;
+    border-radius: 30px;
+    transition: all 0.3s;
 }
 .nav-menu li a{
     font: bold;
     text-decoration: none;
     font-style: italic;
+    font-weight: 300;
     font-size: 25px;
-    color: indigo;
+    color: #000;
 }
 
 .nav-menu li a:hover{
@@ -49,28 +69,144 @@ body{
 }
 .m-icon{
     display: flex ;
-    display: none;
     align-items: center;
 }
 .m-icon a{
     text-decoration: none;
-    color: navy;
+    color: #000;
     font-size: 50px;
 }
-@media screen and (max-width:790px){
-    .nav-menu{
-        flex-direction: column;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 5rem;
-        text-align: center;
-        background-color: rgb(221, 166, 146);
-    }
-    .menu-icon {
-        top: 50px;
-        right: 50px;
-        position: absolute;
-        display: block;
-    }
+.nav-container_2{
+    display: flex;
+    justify-content: space-between;
+}
+.big_logo{
+    font-size: 160px;
+    padding-left: 3%;
+    padding-top: 30px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Sansita Swashed', cursive;
+}
+.text{
+    margin-top: 100px;
+    width: 250px;
+    padding-bottom: 30px;
+    transform: rotate(90deg);
+    font-size: 38px;
+    border-bottom: solid 5px #000;
+    border-radius: 30px;
+}
+.nav-container_3{
+    display: flex;
+    justify-content: space-between
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    font-size: 40px;
+    padding-left: 30px;
+    font-family: 'Sansita Swashed', cursive;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    font-size: 40px;
+    padding-right: 30px;
+}
+.japan{
+    font-size: 60px;
+    color: red;
+}
+.two-spans{
+    display: flex;
+    width: 500px;
+    font-size: 15px;
+    justify-content: space-between;
+    color: rgb(70, 27, 168);
+}
+.two-spans span{
+    padding:10px;
+}
+.title{
+    color: rgb(255, 5, 5);
+    font-family: 'Monoton', cursive;
+    padding-left: 50px;
+}
+.icons{
+    color: #e9400d;
+    margin-top: 30px;
+}
+#back-icon{
+    color: rgba(255, 68, 0, 0.514);
+    padding:5px 55px;
+}
+#next-icon{
+    padding:5px 55px;
+}
+.img-skia{
+    width: 750px;
+    height: 900px;
+    position: absolute;
+    top: 8%;
+    right: 30%;
+}
+.logo_ziko{
+    position: absolute;
+    width: 800px;
+    top: 15%;
+    right: 5%;
+}
+.circles{
+    position: absolute;
+    left: 0;
+    top: 550px;
+}
+.line_one{
+    padding-top: 150px;
+    border-bottom: solid 2px #000000;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 400px;
+    font-size: 35px;
+}
+.line_two{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 350px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.down{
+    font-size: 90px;
+    position: absolute;
+    padding-top: 50px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 90px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #e9400d;
+    transition: all 0.5s;
+}
+.down:hover{
+    background: #000000;
+    color: #e9400d;
+}
+.contact-icons{
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+    font-size: 50px;
+}
+.contact-icons a{
+    padding: 5px 20px;
+    transition: all 0.5s;
+}
+.contact-icons a:hover{
+    color: red;
 }
